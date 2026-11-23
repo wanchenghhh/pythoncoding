@@ -14,16 +14,17 @@
 person = (1,'法外狂徒小桐','男')
 print(person,type(person)) # (1, '法外狂徒小桐', '男') <class 'tuple'>
 
-# 元组中的元素不可变 ，但可以访问
+# 元组中的元素不可变 ，但可以访问。person[1]
 print(f'查看person中的名字:{person[1]}')
 
 # person[2]='TS'  元组中的元素不能变
+
 data=(1,2,3,2,1,3) # 可以存储重复的
 
-# count()
+# count()    data.count(2)
 print(f'查看2出现的次数:{data.count(2)}') # 查看2出现的次数:2
 
-# index()
+# index()  data.index(2)
 print(f'查看2出现的第一个索引:{data.index(2)}') # 查看2出现的第一个索引:1
 
 # in
