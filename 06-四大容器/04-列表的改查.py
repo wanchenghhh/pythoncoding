@@ -33,6 +33,8 @@ list3 = [5, 7, 2, 4, 8, 3]
 list3.sort(reverse=True)  # reverse 是不是需要排序反转  升序-降序
 print(list3)  # [8, 7, 5, 4, 3, 2]
 print("=" * 100)
+
+
 """
   查  
     元素 in 列表  判断元素在不在列表中  返回 True False
@@ -46,13 +48,16 @@ print(f'迪丽热巴在不在列表中:{"迪丽热巴" in name_list}')
 print(f'马尔扎哈在列表中出现的次数:{name_list.count('马尔扎哈')}')
 print(f'马尔扎哈在列表中出现第一次出现的位置:{name_list.index('马尔扎哈')}')
 
+
 """
   列表中通用的 全局函数 
   len(列表) 查看列表的长度
-  max(列表) 求最大元素  min(列表) 求最小元素 sum(列表) 求和 avg?
+  max(列表) 求最大元素  
+  min(列表) 求最小元素 
+  sum(列表) 求和    #avg?没有这个函数
   max(元素1,元素2) 求最大元素
-  sort(列表)
-  sort(列表,reverse=True)
+  sorted(列表)    升序，返回新列表
+  sorted(列表,reverse=True) 降序
 
 """
 
@@ -61,6 +66,14 @@ print(f'最高薪资:{max(num_list)}')
 print(f'最低薪资:{min(num_list)}')
 print(f'总薪资:{sum(num_list)}')
 print(f'平均薪资:{sum(num_list) / len(num_list)}')
+
+
+nums = [3, 1, 2]
+new_nums = sorted(nums)              # 返回新列表 [1, 2, 3]
+new_nums = sorted(nums, reverse=True) # 降序 [3, 2, 1]
+print(nums)                          # 原列表不变，还是 [3, 1, 2]
+
+
 
 """
  列表的扩充

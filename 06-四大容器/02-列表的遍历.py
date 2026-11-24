@@ -1,4 +1,6 @@
 """
+"""
+"""
     列表的遍历
      第一种方式  推荐方式
           for 临时变量 in 列表:
@@ -10,6 +12,7 @@ name_list = ["刘德华","黎明","张学友","郭富城"]
 for name in name_list:
     print(name, end=" ")
 print()
+
 # while 遍历 通过索引找数据
 i = 0  # 定义计数器  索引
 while i < len(name_list):
