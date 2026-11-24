@@ -18,6 +18,7 @@ dict4 = {1:"张三",2:"李四",2:"小明"}
 print(dict3) # {'name': '小晨晨', 'age': 21}
 print(dict4) # {1: '张三', 2: '小明'}
 
+
 # 取值  字典[key]  如果键不存在就报错
 print(f'dict3["name"]:{dict3["name"]}')
 # print(f'dict3["username"]:{dict3["username"]}') # KeyError: 'username'
